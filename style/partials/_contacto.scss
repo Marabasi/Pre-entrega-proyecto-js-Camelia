@@ -1,0 +1,52 @@
+.info-contacto {
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .atencion {
+        display: flex;
+        justify-content: space-between;
+        .p {
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin: 15px;
+            width: 335px;
+        }
+        .map-responsive {
+            display: flex;
+            margin: 15px;
+            overflow: hidden;
+            padding-bottom: 45%;
+            position: relative;
+            height: 0;
+            .map-responsive iframe {
+                left: 0;
+                top: 0;
+                height: 80%;
+                width: 50%;
+                position: absolute;
+            }
+        }
+      }
+ 
+
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+        .Subtitulocon {
+            display: flex;
+            justify-content:left;
+            color: $secondaryColor;
+        }
+    }
+
+    p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #1B0005;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+  }

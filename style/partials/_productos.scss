@@ -1,0 +1,27 @@
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    gap: 24px;
+    margin: 20px;
+    padding: 10px;
+
+    .producto {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        place-items: center;
+        border-radius: 5px;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+        .scale-up-center{-webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+        animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both}
+    }
+
+    h2{
+        font-family: 'Signika', sans-serif;
+        color: $secondaryColor;
+        font-size: 30px;
+        margin: 10px;
+        padding: 10px;
+    }
+}

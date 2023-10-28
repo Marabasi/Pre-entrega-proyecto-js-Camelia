@@ -1,0 +1,204 @@
+@media screen and (min-width: 480px) and (max-width: 950px) {
+    .body {
+        background-color: #78286B;
+        color: #E600C2;
+        .imagendelogo {
+            margin:auto;
+        }
+        .titulo {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    main {
+        .info {
+            flex-direction: column;
+            grid-template-columns: 1fr;
+            .cajita {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                }
+                .img_inicio {
+                    width: 60%;
+                    margin: auto; //to center the image//
+                    align-content: center;
+                    display: flex;
+                    }
+                .parrafos {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    position: relative;
+                    padding: auto;
+                    margin: auto;
+                    display: grid;
+                    }
+         }
+        
+    }
+    
+    .h1 {
+        color: #E600C2;
+     }
+
+    
+    .productos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+     }
+
+     .h2 {
+        color: #AA0490;
+     }
+
+     .h3 {
+        color: #462D42;
+     }
+    
+     .p {
+        width: 100%;
+        color: #1B0005;
+     }
+
+     .Subtitulo {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .info-contacto {
+        margin: 10px;
+        padding-top: 0rem;
+        padding-inline: 0rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .atencion {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            .horario {
+                display: grid;
+                grid-template-columns: 1fr;
+                .map-responsive {
+                    width: 95%;
+                }
+            }
+            .comunicate {
+                display: grid;
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        .contactanos {
+            margin: 10px;
+            padding: 20px;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .body {
+        background-color: #AA4139;
+        .titulo {
+            flex-direction: column;
+            width: 100%;
+        }
+        .imagendelogo {
+            margin:auto;
+        }
+    }
+
+    .h1 {
+        color: #FF2615;
+    }
+
+    main {
+        .info {
+            flex-direction: column;
+            width: auto;
+            grid-template-columns: 1fr;
+            .cajita {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                flex-direction: column;
+                .img_inicio {
+                    display: flex;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                }
+                .parrafos {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    position: relative;
+                    padding: auto;
+                    margin: auto;
+                    color: #5E2F2B;
+                }
+            }
+        }
+    }
+    
+    .productos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (12, 1fr);
+    }
+
+    .h2 {
+        font-size: 20px;
+        color: #F64133;
+    }
+
+    .h3 {
+        color: #5E2F2B;
+    }
+
+
+    .Subtitulo {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .info-contacto {
+        margin: 10px;
+        padding-top: 0rem;
+        padding-inline: 0rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        .atencion {
+            display: flex;
+            flex-direction: column;
+            .horario {
+                display: grid;
+                grid-template-columns: 1fr;
+                .map-responsive {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                }
+            }
+            .comunicate {
+                display: grid;
+                grid-template-columns: 1fr; 
+            }
+        }
+        
+    }
+
+    .contactanos {
+        margin: 10px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .p {
+        width: 300px;
+        color: #130C0B;
+    }
+}

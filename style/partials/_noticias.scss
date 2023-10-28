@@ -1,0 +1,29 @@
+// .header {
+//     color: $secondaryColor;
+//     font-size: 27px;
+//     padding: 100px;
+// }
+
+.info {
+    p {
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         color: #1B0005;
+         font-size: 22px;
+         line-height: 30px;
+         margin: 10px;
+    }
+}
+    
+.container {
+    .text-center header {
+        color: $secondaryColor
+    }
+}
+
+.form-group {
+    margin-bottom: 3px;
+    .bigicon {
+        font-size: 35px;
+        color: $secondaryColor;
+    }
+}

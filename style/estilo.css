@@ -1,0 +1,514 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Signika:wght@300;400&family=Urbanist:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika", sans-serif;
+}
+
+.body .titulo {
+  background-image: url(../Img/Banner2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body .titulo .imagendelogo {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+}
+.body .navbar .navbar-toggler {
+  color: #E18E9D;
+}
+.body .navbar .navbar-brand {
+  color: #E18E9D;
+  font-family: "Signika", sans-serif;
+}
+.body .navbar .nav-item {
+  color: #E18E9D;
+  font-family: "Signika", sans-serif;
+  animation: rotate-vert-left 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+.body .navbar .btn {
+  color: #9F3548;
+}
+.body .navbar .btn-outline-success {
+  --bs-btn-color: $mainColor;
+  --bs-btn-border-color: $mainColor;
+}
+.body .navbar .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: $secondaryColor;
+  --bs-btn-border-color: $secondaryColor;
+}
+.body .navbar .btn-outline-success {
+  color: #E18E9D;
+}
+.body .navbar:hover {
+  color: #E18E9D;
+}
+
+.body {
+  background-color: #9F3548;
+}
+.body .banner {
+  background-image: url("./../Img/Banner2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body .banner h1 {
+  font-family: "Caveat", cursive;
+  color: #E18E9D;
+  font-size: 60px;
+  text-align: center;
+}
+
+@keyframes rotate-vert-left {
+  0% {
+    transform: rotateY(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: rotateY(360deg);
+    transform-origin: left;
+  }
+}
+main .section {
+  padding: 10px;
+}
+main .info {
+  display: grid;
+  grid-template-columns: 20%, 20%, 20%, 20% 20%;
+  grid-template-rows: 20%, 20%, 20%, 20%, 20%;
+  margin: 10px;
+  /* Estilos para el botón */
+  /* Cambiar color de fondo al pasar el cursor sobre el botón */
+}
+main .info .boton-carrito {
+  background-color: #E18E9D; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 1px 10px; /* Espaciado interno para el contenido del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+  width: 100px;
+  height: 50px;
+}
+main .info .boton-carrito:hover {
+  background-color: #f49bf7; /* Nuevo color de fondo al pasar el cursor */
+}
+main .info .subtitulo-info-button {
+  background-color: #E18E9D; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 1px 10px; /* Espaciado interno para el contenido del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+  width: 100px;
+  height: 50px;
+}
+main .info .subtitulo-info-button:hover {
+  background-color: #f49bf7; /* Nuevo color de fondo al pasar el cursor */
+}
+main .info .titulo-producto {
+  padding-top: 1rem;
+  color: #E18E9D;
+  font-family: "Signika", sans-serif;
+  font-size: 30px;
+  margin: 1rem;
+}
+main .info .subtitulo-info {
+  padding-top: 1rem;
+  color: #E18E9D;
+  font-family: "Signika", sans-serif;
+  font-size: 30px;
+  margin: 1rem;
+}
+main .info .cajita {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+main .info .cajita .imagen-producto {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main .info .cajita .img_inicio {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main .info .cajita .precio-producto {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  position: right;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 1rem;
+  color: #f8f3f4;
+}
+main .info .cajita .precio-producto .parrafos {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  position: right;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 1rem;
+  color: #f8f3f4;
+}
+main .info .cajita .precio-producto .parrafos p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f8f3f4;
+  font-size: 22px;
+  line-height: 30px;
+}
+main .volver {
+  color: #E18E9D;
+  font-family: "Signika", sans-serif;
+  font-size: 25px;
+  margin: 20px;
+  padding: 30px;
+  text-decoration: none;
+}
+main .volver:hover {
+  color: bisque;
+}
+
+footer .redes {
+  background-color: #E18E9D;
+  color: bisque;
+  margin: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  text-align: center;
+  font-size: 35px;
+}
+
+.fa-facebook, .fa-whatsapp, .fa-instagram {
+  background-color: rgb(58, 58, 253);
+}
+
+.fa-instagram {
+  background-color: rgb(240, 25, 175);
+}
+
+.fa-whatsapp {
+  background-color: rgb(41, 207, 41);
+}
+
+.fa-facebook, .fa-whatsapp, .fa-instagram {
+  width: 100px;
+  border-radius: 5px;
+  margin: 1rem;
+}
+.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover {
+  background-color: #9F3548;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-content: center;
+  gap: 24px;
+  margin: 20px;
+  padding: 10px;
+}
+.productos .producto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  border-radius: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.productos .producto .scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.productos h2 {
+  font-family: "Signika", sans-serif;
+  color: #E18E9D;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Subtitulo {
+  display: flex;
+  justify-content: center;
+  color: #E18E9D;
+}
+
+.videopodcast {
+  margin: 3rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.info p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1B0005;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 10px;
+}
+
+.container .text-center header {
+  color: #E18E9D;
+}
+
+.form-group {
+  margin-bottom: 3px;
+}
+.form-group .bigicon {
+  font-size: 35px;
+  color: #E18E9D;
+}
+
+.info-contacto {
+  padding-top: 2rem;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.info-contacto .atencion {
+  display: flex;
+  justify-content: space-between;
+}
+.info-contacto .atencion .p {
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: 15px;
+  width: 335px;
+}
+.info-contacto .atencion .map-responsive {
+  display: flex;
+  margin: 15px;
+  overflow: hidden;
+  padding-bottom: 45%;
+  position: relative;
+  height: 0;
+}
+.info-contacto .atencion .map-responsive .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 80%;
+  width: 50%;
+  position: absolute;
+}
+.info-contacto .contactanos {
+  display: flex;
+  flex-direction: column;
+}
+.info-contacto .contactanos .Subtitulocon {
+  display: flex;
+  justify-content: left;
+  color: #E18E9D;
+}
+.info-contacto p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1B0005;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 950px) {
+  .body {
+    background-color: #78286B;
+    color: #E600C2;
+  }
+  .body .imagendelogo {
+    margin: auto;
+  }
+  .body .titulo {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .info {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  main .info .cajita {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .info .img_inicio {
+    width: 60%;
+    margin: auto;
+    align-content: center;
+    display: flex;
+  }
+  main .info .parrafos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    padding: auto;
+    margin: auto;
+    display: grid;
+  }
+  .h1 {
+    color: #E600C2;
+  }
+  .productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .h2 {
+    color: #AA0490;
+  }
+  .h3 {
+    color: #462D42;
+  }
+  .p {
+    width: 100%;
+    color: #1B0005;
+  }
+  .Subtitulo {
+    flex-direction: column;
+    width: auto;
+  }
+  .info-contacto {
+    margin: 10px;
+    padding-top: 0rem;
+    padding-inline: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .info-contacto .atencion {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .info-contacto .atencion .horario {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info-contacto .atencion .horario .map-responsive {
+    width: 95%;
+  }
+  .info-contacto .atencion .comunicate {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info-contacto .contactanos {
+    margin: 10px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .body {
+    background-color: #AA4139;
+  }
+  .body .titulo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .body .imagendelogo {
+    margin: auto;
+  }
+  .h1 {
+    color: #FF2615;
+  }
+  main .info {
+    flex-direction: column;
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+  main .info .cajita {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    flex-direction: column;
+  }
+  main .info .cajita .img_inicio {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  main .info .cajita .parrafos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    padding: auto;
+    margin: auto;
+    color: #5E2F2B;
+  }
+  .productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 12, 1fr;
+  }
+  .h2 {
+    font-size: 20px;
+    color: #F64133;
+  }
+  .h3 {
+    color: #5E2F2B;
+  }
+  .Subtitulo {
+    flex-direction: column;
+    width: auto;
+  }
+  .info-contacto {
+    margin: 10px;
+    padding-top: 0rem;
+    padding-inline: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .info-contacto .atencion {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-contacto .atencion .horario {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info-contacto .atencion .horario .map-responsive {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .info-contacto .atencion .comunicate {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contactanos {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .p {
+    width: 300px;
+    color: #130C0B;
+  }
+}/*# sourceMappingURL=estilo.css.map */
